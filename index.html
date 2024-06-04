@@ -9,9 +9,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             background-color: #f0f0f0;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
 
         .container {
@@ -24,7 +26,6 @@
         h1 {
             font-size: 48px;
             margin-bottom: 20px;
-            font-family: Arial, sans-serif;
         }
 
         input[type="text"] {
@@ -34,7 +35,6 @@
             border-radius: 5px;
             margin-bottom: 10px;
             width: 200px;
-            font-family: Arial, sans-serif;
         }
 
         button {
@@ -45,7 +45,6 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-family: Arial, sans-serif;
         }
 
         button:hover {
@@ -59,15 +58,13 @@
         #message {
             color: red;
             font-weight: bold;
-            font-family: Arial, sans-serif;
             margin-top: 10px; /* Space between button and message */
         }
     </style>
 </head>
 <body>
-    <div class="container"><h1>Day 1</h1></div>
-    <br>
     <div class="container">
+        <h1>Day 1</h1>
         <input type="text" id="passwordBox" placeholder="Enter password">
         <button onclick="checkPassword()">Submit</button>
         <p id="message" class="hidden">Incorrect password</p>
