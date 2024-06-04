@@ -71,7 +71,8 @@
             const correctPassword = "ViFiMa"; // Replace with your desired password
 
             if (password === correctPassword) {
-                alert("You have cracked the code. Good Job! Your present is ..."); // Replace with your desired alert text
+                window.location.href = 'secondpassword.html'; // Redirect to secondpassword.html
+                //alert("You have cracked the code. Good Job! Your present is ..."); // Replace with your desired alert text
             } else {
                 message.classList.remove('hidden');
                 setTimeout(() => {
