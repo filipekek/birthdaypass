@@ -75,7 +75,8 @@
             const message = document.getElementById('message');
             const correctPassword = "ViFiMa"; // Replace with your desired password
 
-            if (password === correctPassword) {\
+            if (password === correctPassword) {
+                alert("Congratulations for cracking the code");
                 window.location.href = 'secondpassword.html';
             } else {
                 message.classList.remove('hidden');
