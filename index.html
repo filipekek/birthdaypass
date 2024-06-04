@@ -76,10 +76,7 @@
             const correctPassword = "ViFiMa"; // Replace with your desired password
 
             if (password === correctPassword) {\
-                alert("Congratulations for cracking the first day's password. You may go to sleep now and we will continue tomorrow!");
-                setTimeout(() => {
-                    window.location.href = 'secondpassword.html';
-                }, 1000); // Delay for 1 second to show the alert message
+                window.location.href = 'secondpassword.html';
             } else {
                 message.classList.remove('hidden');
                 setTimeout(() => {
