@@ -40,6 +40,11 @@ button {
     cursor: pointer;
 }
 
+img {
+    height: 50%
+    width: auto
+}
+
 button:hover {
     background-color: #0056b3;
 }
