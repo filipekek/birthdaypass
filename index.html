@@ -60,11 +60,13 @@
             font-weight: bold;
             margin-top: 10px; /* Space between button and message */
         }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Day 1</h1>
+        
+        <h1>Stage 1</h1>
         <input type="text" id="passwordBox" placeholder="Enter password">
         <button onclick="checkPassword()">Submit</button>
         <p id="message" class="hidden">Incorrect password</p>
@@ -76,7 +78,7 @@
             const correctPassword = "ViFiMa"; // Replace with your desired password
 
             if (password === correctPassword) {
-                alert("Congratulations for cracking the first code. Tomorrow we continue...");
+                alert("Congratulations for cracking the first code.");
                 window.location.href = 'secondpassword.html';
             } else {
                 message.classList.remove('hidden');
